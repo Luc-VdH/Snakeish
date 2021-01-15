@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		38329BC125A37602006AFD7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38329BC025A37602006AFD7B /* AppDelegate.swift */; };
-		38329BC325A37602006AFD7B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38329BC225A37602006AFD7B /* GameScene.sks */; };
-		38329BC525A37602006AFD7B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38329BC425A37602006AFD7B /* Actions.sks */; };
 		38329BC725A37602006AFD7B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38329BC625A37602006AFD7B /* GameScene.swift */; };
 		38329BC925A37602006AFD7B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38329BC825A37602006AFD7B /* GameViewController.swift */; };
 		38329BCC25A37602006AFD7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38329BCA25A37602006AFD7B /* Main.storyboard */; };
 		38329BCE25A37603006AFD7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38329BCD25A37603006AFD7B /* Assets.xcassets */; };
 		38329BD925A37604006AFD7B /* SnakeishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38329BD825A37604006AFD7B /* SnakeishTests.swift */; };
 		38329BE425A37604006AFD7B /* SnakeishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38329BE325A37604006AFD7B /* SnakeishUITests.swift */; };
+		38329BFB25A4523C006AFD7B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38329BFA25A4523C006AFD7B /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +37,6 @@
 /* Begin PBXFileReference section */
 		38329BBD25A37602006AFD7B /* Snakeish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snakeish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38329BC025A37602006AFD7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38329BC225A37602006AFD7B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		38329BC425A37602006AFD7B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		38329BC625A37602006AFD7B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		38329BC825A37602006AFD7B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		38329BCB25A37602006AFD7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +48,7 @@
 		38329BDF25A37604006AFD7B /* SnakeishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38329BE325A37604006AFD7B /* SnakeishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeishUITests.swift; sourceTree = "<group>"; };
 		38329BE525A37604006AFD7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38329BFA25A4523C006AFD7B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				38329BC025A37602006AFD7B /* AppDelegate.swift */,
-				38329BC225A37602006AFD7B /* GameScene.sks */,
-				38329BC425A37602006AFD7B /* Actions.sks */,
 				38329BC625A37602006AFD7B /* GameScene.swift */,
 				38329BC825A37602006AFD7B /* GameViewController.swift */,
 				38329BCA25A37602006AFD7B /* Main.storyboard */,
 				38329BCD25A37603006AFD7B /* Assets.xcassets */,
 				38329BCF25A37603006AFD7B /* Info.plist */,
+				38329BFA25A4523C006AFD7B /* Settings.swift */,
 			);
 			path = Snakeish;
 			sourceTree = "<group>";
@@ -235,9 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38329BCC25A37602006AFD7B /* Main.storyboard in Resources */,
-				38329BC325A37602006AFD7B /* GameScene.sks in Resources */,
 				38329BCE25A37603006AFD7B /* Assets.xcassets in Resources */,
-				38329BC525A37602006AFD7B /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +259,7 @@
 			files = (
 				38329BC725A37602006AFD7B /* GameScene.swift in Sources */,
 				38329BC925A37602006AFD7B /* GameViewController.swift in Sources */,
+				38329BFB25A4523C006AFD7B /* Settings.swift in Sources */,
 				38329BC125A37602006AFD7B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6ZPL2UJ5B;
 				INFOPLIST_FILE = Snakeish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6ZPL2UJ5B;
 				INFOPLIST_FILE = Snakeish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
